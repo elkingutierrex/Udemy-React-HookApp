@@ -1,8 +1,10 @@
 import React, {useEffect, useState} from 'react'
+import { Message } from './Message'
 import './effects.css'
 
 export const SimpleForm = () => {
 
+    
     const [formState, setFormState] = useState({
         name: '',
         email:''
@@ -59,6 +61,9 @@ export const SimpleForm = () => {
                  />
             
         </div>
+
+        { (name === '123') && <Message /> }
+        
         </>
     )
 }
